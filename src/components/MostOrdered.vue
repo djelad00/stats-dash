@@ -4,7 +4,7 @@
       <h2 class="text-xl font-semibold leading-loose text-white">Most Artist Played</h2>
       <button class="flex gap-x-2.5 py-3 px-4 rounded-lg border border-gray-700">
         <ChevronDownIcon />
-        <span class="text-sm text-white">Today</span>
+        <span class="text-sm text-white">30 days</span>
       </button>
     </div>
     <hr class="border-gray-700" />

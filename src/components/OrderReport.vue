@@ -13,7 +13,7 @@
           <td class="py-4 border-b border-gray-700">Artist</td>
           <td class="py-4 border-b border-gray-700">Title</td>
           <td class="py-4 border-b border-gray-700 text-right">Total Plays</td>
-          <td class="py-4 border-b border-gray-700 text-center">Trend</td>
+          <td class="py-4 border-b border-gray-700 text-center">Genre</td>
         </tr>
       </thead>
       <tbody>
@@ -30,9 +30,9 @@
             <span
               class="flex justify-center py-1 w-24 font-medium capitalize rounded-full"
               :class="{
-                'bg-accent-green/20 text-accent-green': order.status === 'increasing',
-                'bg-accent-purple/20 text-accent-purple': order.status === 'declining',
-                'bg-accent-orange/20 text-accent-green': order.status === 'steady',
+                'bg-accent-green/20 text-accent-green': order.status === 'House',
+                'bg-accent-purple/20 text-accent-purple': order.status === 'Pop',
+                'bg-accent-orange/20 text-accent-green': order.status === 'Rock',
               }"
             >
               {{ order.status }}
@@ -53,42 +53,42 @@
       name: "Swedish House Mafia",
       menu: "Save the world",
       total: "225",
-      status: "increasing",
+      status: "House",
     },
     {
       avatar: "avatar-2.png",
       name: "Michael Jackson",
       menu: "The way you make me feel (remix)",
       total: "145",
-      status: "declining",
+      status: "Pop",
     },
     {
       avatar: "avatar-3.png",
-      name: "LMFAO",
-      menu: "Shots!",
+      name: "LMFAO vs Metallica",
+      menu: "Shots! (Heavy Rock remix)",
       total: "105",
-      status: "steady",
+      status: "Rock",
     },
     {
       avatar: "avatar-4.png",
-      name: "Miley Cyrus",
-      menu: "Party in the USA (short edit)",
+      name: "Daft Punk",
+      menu: "One more time (Baltimore House edit)",
       total: "85",
-      status: "increasing",
+      status: "House",
     },
     {
       avatar: "avatar-5.png",
-      name: "Joda Cat",
-      menu: "Love me",
+      name: "Doja Cat",
+      menu: "Say so",
       total: "56",
-      status: "increasing",
+      status: "Pop",
     },
     {
       avatar: "avatar-6.png",
       name: "Journey",
       menu: "Don't stop believing",
       total: "45",
-      status: "declining",
+      status: "Rock",
     },
   ];
 </script>
